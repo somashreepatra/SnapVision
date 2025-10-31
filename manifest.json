@@ -1,0 +1,18 @@
+{
+  "name": "RecSoPlay",
+  "description": "Record and play",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+        "matches" : ["https://*/platform-web/*"],
+        "js": ["recordnplay.js"],
+        "run_at" : "document_idle"
+    },
+    {
+        "matches" : ["http://*/platform-web/*"],
+        "js": ["recordnplay.js"],
+        "run_at" : "document_idle"
+    }
+  ]
+}
